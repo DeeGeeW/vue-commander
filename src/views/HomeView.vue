@@ -14,6 +14,7 @@ export default {
       axios.get("/decks").then((response) => {
         console.log("decks index", response);
         this.decks = response.data;
+        console.log(this.decks);
       });
     },
   },
