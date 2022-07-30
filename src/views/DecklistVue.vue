@@ -6,7 +6,7 @@ export default {
       cards: {},
     };
   },
-  mounted: function () {
+  created: function () {
     console.log(this.$route.params.id);
     axios.get(`/decks/${this.$route.params.id}`).then((response) => {
       this.deck = response.data;
